@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Viraj Sawant Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div id="heading">
+      <h1><span class="name">VIRAJ</span> <span class="pipe">|</span> <span class="title">PORTFOLIO</span></h1>
+    </div>
+    <div class="menu-toggle" id="mobile-menu">☰</div>
+    <ul class="nav-links">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#about">About Me</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#certifications">Certifications</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="resume.pdf" class="resume-btn">Resume</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="hero" class="home-section">
+    <div class="video-sec">
+      <video autoplay muted loop playsinline class="bg-video">
+        <source src="vedio8.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </div>
+    <div class="hero-content">
+      <h6>Hi, my name is</h6>
+      <h1>Viraj Sawant</h1>
+      <p>I'm a passionate Computer Engineering student skilled in <strong>HTML, CSS, Bootstrap, JavaScript, PHP, and AWS</strong>.</p>
+      <div class="typed-container">
+        <h2>I am <span class="typed-text">a Developer</span></h2>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about-main">
+    <div class="about">
+      <h1>About Me</h1>
+      <p>I am a final-year Computer Engineering student passionate about web development using HTML, CSS, JavaScript, PHP, and AWS.</p>
+      <p>I aim to grow as a developer by working on challenging projects and contributing to innovative solutions.</p>
+      <a href="resume.pdf" class="btn-download">Download CV</a>
+    </div>
+    <div class="about-img">
+      <img src="viraj.png" alt="Viraj Image">
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="skills-section">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-box"><img src="html.jpeg" alt="HTML"><p>HTML</p></div>
+      <div class="skill-box"><img src="css.jpeg" alt="CSS"><p>CSS</p></div>
+      <div class="skill-box"><img src="js.jpeg" alt="JS"><p>JavaScript</p></div>
+      <div class="skill-box"><img src="bootstrap.jpeg" alt="Bootstrap"><p>Bootstrap</p></div>
+      <div class="skill-box"><img src="react.jpeg" alt="React"><p>React</p></div>
+      <div class="skill-box"><img src="php.jpeg" alt="PHP"><p>PHP</p></div>
+      <div class="skill-box"><img src="aws.jpeg" alt="AWS"><p>AWS</p></div>
+      <div class="skill-box"><img src="sql.jpeg" alt="SQL"><p>SQL</p></div>
+    </div>
+  </section>
+
+  <!-- Certifications Section -->
+  <section id="certifications" class="certifications-section">
+    <h2>My Certifications</h2>
+    <div class="certifications-grid">
+      <div class="cert-card"><img src="website deve.png.jpeg" alt="Website Development"><p>Website Development</p></div>
+      <div class="cert-card"><img src="Frontend dev.png" alt="Frontend Development"><p>Frontend Development</p></div>
+      <div class="cert-card"><img src="java.png" alt="Java"><p>Java Developer</p></div>
+      <div class="cert-card"><img src="power BI Technology.png" alt="Power BI"><p>Power BI</p></div>
+      <div class="cert-card"><img src="powerquery.png" alt="Power Query"><p>Power Query</p></div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section">
+    <h1>Contact</h1>
+    <h2>Get in Touch</h2>
+    <p>I'm always open to new opportunities. Whether you want to say hi or have a project in mind, let’s connect!</p>
+    <form class="contact-form" action="https://formspree.io/f/myzpwren" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="footer">
+    <div class="footer-grid">
+      <a href="https://www.linkedin.com/in/viraj-sawant-7238332b1" target="_blank"><img src="linkdin.png" alt="LinkedIn"><span>LinkedIn</span></a>
+      <a href="mailto:sawantviraj605@gmail.com"><img src="mail.png" alt="Email"><span>Email</span></a>
+      <a href="tel:+919359876835"><img src="call.png" alt="Call"><span>Call</span></a>
+      <a href="https://www.instagram.com/" target="_blank"><img src="insta.png" alt="Instagram"><span>Instagram</span></a>
+      <a href="https://wa.me/919359876835" target="_blank"><img src="whatsapp.png" alt="WhatsApp"><span>WhatsApp</span></a>
+      <a href="https://github.com/v1raj-09" target="_blank"><img src="github.png" alt="GitHub"><span>GitHub</span></a>
+    </div>
+    <div class="footer-credit">
+      <p>Designed & Built by <strong>Viraj Sawant</strong></p>
+    </div>
+  </footer>
+
+  <script>
+    const menu = document.getElementById('mobile-menu');
+    const nav = document.querySelector('.nav-links');
+    menu.addEventListener('click', () => {
+      nav.classList.toggle('active');
+    });
+  </script>
+
+  <script src="script.js"></script>
+</body>
+</html>
