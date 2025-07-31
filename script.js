@@ -30,21 +30,20 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-// ✅ Resume Download Function (Navbar Button)
+
 function downloadResume(event) {
-  event.preventDefault(); // Stop link from opening immediately
+  
 
   const btn = document.querySelector('.resume-btn');
 
-  // Animation effect
+  
   btn.classList.remove('clicked');
-  void btn.offsetWidth; // trigger reflow
+  void btn.offsetWidth;
   btn.classList.add('clicked');
 
-  // ✅ Simple Alert
   alert("Resume download successful!");
 
-  // Trigger file download
+
   const link = document.createElement('a');
   link.href = 'resume.pdf';
   link.download = 'Viraj_Sawant_Resume.pdf';
@@ -53,7 +52,7 @@ function downloadResume(event) {
 
 
 
-// ✅ Contact Form Handling with Alert (Formspree)
+
 const form = document.querySelector('.contact-form');
 
 form.addEventListener('submit', async (e) => {
